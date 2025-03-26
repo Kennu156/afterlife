@@ -5,8 +5,11 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const goToBack = () => router.back();
-const goToMagazine = () => router.push('/magazine');
+const goToBack = () => router.back(); window.scrollTo(0, 0);
+const goToMagazine = () => router.push('/magazine'); window.scrollTo(0, 0);
+const goToPodcastPost = () => router.push('/podcast-post');  window.scrollTo(0, 0);
+
+
 
 </script>
 
@@ -30,15 +33,15 @@ const goToMagazine = () => router.push('/magazine');
                     <p><strong>DATE</strong> 16. March 2022</p>  
                     <p><strong>Duration</strong> 1 Min</p> 
                 </div>
-                <button class="outline rounded-3xl py-2 px-3">LABEL</button>
+                <button @click="goToPodcastPost" class="outline rounded-3xl py-2 px-3">LABEL</button>
             </div>
         </div>
     </div>
 
     <img class="block mx-auto w-[95%]  mt-36" src="./img/diogo-nunes-Wa9ilX9XYOI-unsplash 1.png" alt="">
     </section>
-    <section class="flex">
-        <div class="grid grid-cols-2">
+    <section class="flex mx-28">
+        <div class="grid grid-cols-2 gap-20">
             <div class="flex flex-col gap-5 mx-auto">
                 <div class="flex items-center gap-9">
                     <img class="w-1/4 rounded-full" src="./img/jack-finnigan-rriAI0nhcbc-unsplash 1.png" alt="">

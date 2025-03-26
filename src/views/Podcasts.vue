@@ -5,7 +5,8 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const goToPodcastPost = () => router.push('/podcast-post');
+const goToPodcastPost = () => router.push('/podcast-post');  window.scrollTo(0, 0);
+
 
 
 

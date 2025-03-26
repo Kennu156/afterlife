@@ -4,11 +4,13 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const goToMagazine = () => router.push('/magazine');
-const goToHome = () => router.push('/');
-const goToAuthors = () => router.push('/authors');
-const goToPodcast = () => router.push('/podcast');
-const goToMagazinePost = () => router.push('/magazine-post');
+const goToMagazine = () => router.push('/magazine');   window.scrollTo(0, 0);
+const goToHome = () => router.push('/');   window.scrollTo(0, 0);
+const goToAuthors = () => router.push('/authors');   window.scrollTo(0, 0);
+const goToPodcast = () => router.push('/podcast');   window.scrollTo(0, 0);
+const goToMagazinePost = () => router.push('/magazine-post');   window.scrollTo(0, 0);
+const goToPodcastPost = () => router.push('/podcast-post');   window.scrollTo(0, 0);
+
 
 
 </script>
@@ -17,7 +19,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
     <div class="m-6 flex flex-col gap-4">
         <h1 @click="goToHome" class="text-2xl hover:cursor-pointer">FYRRE MAGAZINE</h1>
         <img src="./img/line.png" alt="">
-         <strong><h1 class="text-9xl size text-center mx-60">ART & LIFE</h1></strong>  
+         <strong><h1 class="text-9xl size text-center mx-auto">ART & LIFE</h1></strong>  
     </div>
 
     <div class="bg-black text-white p-6 flex gap-9 w-[80%] mx-auto mt-20">
@@ -35,7 +37,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
                     <p><strong>DATE</strong> 16. March 2022</p>  
                     <p><strong>Duration</strong> 1 Min</p> 
                 </div>
-                <button class="outline rounded-3xl py-2 px-3">LABEL</button>
+                <button @click="goToMagazinePost" class="outline rounded-3xl py-2 px-3 hover:cursor-pointer">LABEL</button>
             </div>
         </div>
     </div>
@@ -43,7 +45,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
     <img class="block mx-auto w-[95%] mt-36" src="./img/image1.png" alt="">
     <section class="flex">
         <div class="flex-1">
-            <div class="mt-32 flex gap-9 mx-60">
+            <div class="mt-32 flex gap-9 mx-32">
             <img src="./img/diogo-nunes-Wa9ilX9XYOI-unsplash 2.png" alt="">
                 <div class="flex flex-col">
                     <h1 class="mb-3 text-2xl"><strong>Hope dies last</strong></h1>
@@ -61,9 +63,9 @@ const goToMagazinePost = () => router.push('/magazine-post');
                 </div>
             </div>
 
-            <img src="./img/line (2).png" alt="" class="mt-10 mx-auto w-[67%]">
+            <img src="./img/line (2).png" alt="" class="mt-10 mx-auto w-[75%]">
 
-            <div class="mt-10 flex gap-9 mx-60">
+            <div class="mt-10 flex gap-9 mx-32">
             <img src="./img/fabian-bachli-A2Zf3fGbdFQ-unsplash 1.png" alt="">
                  <div class="flex flex-col">
                     <h1 class="mb-3 text-2xl"><strong>The best art museums</strong></h1>
@@ -81,9 +83,9 @@ const goToMagazinePost = () => router.push('/magazine-post');
                 </div>
             </div>
 
-            <img src="./img/line (2).png" alt="" class="mt-10 mx-auto w-[67%]">
+            <img src="./img/line (2).png" alt="" class="mt-10 mx-auto w-[75%]">
 
-            <div class=" mt-10 flex gap-9 mx-60">
+            <div class=" mt-10 flex gap-9 mx-32">
             <img src="./img/birmingham-museums-trust-TWavMkqC_cc-unsplash 1.png" alt="">
                 <div class="flex flex-col">
                     <h1 class="mb-3 text-2xl"><strong>The devil is the details</strong></h1>
@@ -95,15 +97,15 @@ const goToMagazinePost = () => router.push('/magazine-post');
                                     <p><strong>DATE</strong> 16. March 2022</p>  
                                     <p><strong>Duration</strong> 1 Min</p> 
                                 </div>
-                            <button @click="goToMagazinePost" class="outline rounded-3xl py-2 px-3 hover:cursor-pointer">ART</button>
+                            <button @click="goToMagazinePost" class="outline rounded-3xl py-2 px-3 hover:cursor-pointer flex">ART</button>
                         </div>        
                     </div>
                 </div>
             </div>
 
-            <img src="./img/line (2).png" alt="" class="mt-10 mx-auto w-[67%]">
+            <img src="./img/line (2).png" alt="" class="mt-10 mx-auto w-[75%]">
 
-            <div class="mt-10 flex gap-9 mx-60">
+            <div class="mt-10 flex gap-9 mx-32">
             <img src="./img/amelia-brown-yWNiCZw5yps-unsplash 1.png" alt="">
                 <div class="flex flex-col">
                     <h1 class="mb-3 text-2xl"><strong>An indestructible hope</strong></h1>
@@ -121,9 +123,9 @@ const goToMagazinePost = () => router.push('/magazine-post');
                 </div>
             </div>
 
-            <img src="./img/line (2).png" alt="" class="mt-10 mx-auto w-[67%]">
+            <img src="./img/line (2).png" alt="" class="mt-10 mx-auto w-[75%]">
 
-            <div class="mt-10 flex gap-9 mx-60">
+            <div class="mt-10 flex gap-9 mx-32">
             <img class="h-60" src="./img/simon-sun-PLai_SojR78-unsplash 1@2x.png" alt="">
                 <div class="flex flex-col">
                     <h1 class="mb-3 text-2xl"><strong>Street art festival</strong></h1>
@@ -135,15 +137,15 @@ const goToMagazinePost = () => router.push('/magazine-post');
                                     <p><strong>DATE</strong> 16. March 2022</p>  
                                     <p><strong>Duration</strong> 1 Min</p> 
                                 </div>
-                            <button @click="goToMagazinePost" class="outline rounded-3xl py-2 px-3 hover:cursor-pointer">STREET ART</button>
+                            <button @click="goToMagazinePost" class="outline rounded-3xl py-2 px-3 hover:cursor-pointer flex">STREET ART</button>
                         </div>        
                     </div>
                 </div>
             </div>
 
-            <img src="./img/line (2).png" alt="" class="mt-10 mx-auto w-[67%]">
+            <img src="./img/line (2).png" alt="" class="mt-10 mx-auto w-[75%]">
 
-            <div class="mt-10 flex gap-9 mx-60">
+            <div class="mt-10 flex gap-9 mx-32">
             <img src="./img/serhii-tyaglovsky-lCdhTOCNrt4-unsplash 1.png" alt="">
                 <div class="flex flex-col">
                     <h1 class="mb-3 text-2xl"><strong>Through the eyes of street artists</strong></h1>
@@ -166,7 +168,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
             <h1><strong>PRINTMAGAZINE</strong></h1>
             <h1 class="text-5xl my-4"><strong>03/2022</strong></h1>
             <img src="./img/magazin-cover.png" alt="">
-            <button class="bg-black text-white py-2 px-4 mt-4">BUTTON</button>
+            <button @click="goToMagazinePost" class="bg-black text-white py-2 px-4 mt-4">BUTTON</button>
             <h1 class="mt-14 mb-5">MOST POPULAR</h1>
             <div class="flex flex-col gap-4">
                 <div class="flex items-start gap-2">
@@ -221,7 +223,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
         </div>
 
         <div class="flex justify-center mt-24">
-            <div class="outline p-7">
+            <div @click="goToPodcastPost" class="outline p-7 hover:cursor-pointer">
                 <img src="./img/podcast-cover.png" alt="">
                 <div class="flex flex-col gap-10">
                     <h1 class="text-3xl mt-5"><strong>The Problem of today's <br> cultural development</strong></h1>
@@ -231,7 +233,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToPodcastPost" class="outline p-7 hover:cursor-pointer">
                 <img src="./img/podcast-cover (1).png" alt="">
                 <div class="flex flex-col gap-10">
                     <h1 class="text-3xl mt-5"><strong>The Hidden messages of <br> Jack Nielson</strong></h1>
@@ -241,7 +243,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToPodcastPost" class="outline p-7 hover:cursor-pointer">
                 <img src="./img/podcast-cover (2).png" alt="">
                 <div class="flex flex-col gap-10">
                     <h1 class="text-3xl mt-5"><strong>Behind the scenes of the <br> street art culture</strong></h1>
@@ -340,6 +342,9 @@ const goToMagazinePost = () => router.push('/magazine-post');
 </template>
 
 <style scoped>
+body {
+    width: 100%;
+}
 
 
 .size {

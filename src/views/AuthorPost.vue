@@ -5,7 +5,9 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const goToBack = () => router.back();
+const goToBack = () => router.back();   window.scrollTo(0, 0);
+const goToMagazinePost = () => router.push('/magazine-post');   window.scrollTo(0, 0);
+
 
 
 </script>
@@ -51,7 +53,7 @@ const goToBack = () => router.back();
 
         <div class="flex flex-col items-center">
             <div class="flex justify-center w-5/6">
-                <div class="outline p-7 flex gap-9 flex-1">
+                <div @click="goToMagazinePost" class="outline p-7 flex gap-9 flex-1 hover:cursor-pointer">
                     <img class="size-img" src="./img/fabian-bachli-A2Zf3fGbdFQ-unsplash 1.png" alt="">
                     <div class="flex flex-col gap-10">
                         <h1 class="text-3xl mt-5"><strong>The best art museums</strong></h1>
@@ -61,7 +63,7 @@ const goToBack = () => router.back();
                         </div>
                     </div>
                 </div>
-                <div class="outline p-7 flex gap-9 flex-1">
+                <div @click="goToMagazinePost" class="outline p-7 flex gap-9 flex-1 hover:cursor-pointer">
                     <img class="size-img" src="./img/amelia-brown-yWNiCZw5yps-unsplash 1.png" alt="">
                     <div class="flex flex-col gap-10">
                         <h1 class="text-3xl mt-5"><strong>An indestructible hope</strong></h1>
@@ -73,7 +75,7 @@ const goToBack = () => router.back();
                 </div>
             </div>
             <div class="flex justify-center w-5/6">
-                <div class="outline p-7 flex gap-9 flex-1">
+                <div @click="goToMagazinePost" class="outline p-7 flex gap-9 flex-1 hover:cursor-pointer">
                     <img class="size-img" src="./img/serhii-tyaglovsky-lCdhTOCNrt4-unsplash 1.png" alt="">
                     <div class="flex flex-col gap-10">
                         <h1 class="text-3xl mt-5"><strong>The chains of our lives</strong></h1>
@@ -83,7 +85,7 @@ const goToBack = () => router.back();
                         </div>
                     </div>
                 </div>
-                <div class="outline p-7 flex gap-9 flex-1">
+                <div @click="goToMagazinePost" class="outline p-7 flex gap-9 flex-1 hover:cursor-pointer">
                     <img class="size-img" src="./mag-img/marjan-blan-marjanblan-wUGWd28H-3E-unsplash 1.png" alt="">
                     <div class="flex flex-col gap-10">
                         <h1 class="text-3xl mt-5"><strong>Keep on smiling</strong></h1>

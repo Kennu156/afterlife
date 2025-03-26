@@ -3,10 +3,11 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const goToMagazine = () => router.push('/magazine');
-const goToHome = () => router.push('/');
-const goToAuthors = () => router.push('/authors');
-const goToPodcast = () => router.push('/podcast');
+const goToMagazine = () => router.push('/magazine'); window.scrollTo(0, 0);
+const goToHome = () => router.push('/'); window.scrollTo(0, 0);
+const goToAuthors = () => router.push('/authors'); window.scrollTo(0, 0);
+const goToPodcast = () => router.push('/podcast'); window.scrollTo(0, 0);
+
 
 
 </script>
@@ -15,8 +16,6 @@ const goToPodcast = () => router.push('/podcast');
     <footer class="bg-black text-white">
         <div class="flex gap-7 pb-44">
             <h1 class="pt-4 text-3xl ml-4">NEWSLETTER+++</h1>
-            <h1 class="pt-4 text-3xl">NEWSLETTER+++</h1>
-            <h1 class="pt-4 text-3xl">NEWSLETTER+++</h1>
             <h1 class="pt-4 text-3xl">NEWSLETTER+++</h1>
             <h1 class="pt-4 text-3xl">NEWSLETTER+++</h1>
             <h1 class="pt-4 text-3xl">NEWSLETTER+++</h1>

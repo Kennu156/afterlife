@@ -5,7 +5,11 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const goToMagazinePost = () => router.push('/magazine-post');
+
+
+const goToMagazinePost = () => router.push('/magazine-post');  window.scrollTo(0, 0);
+const goToAuthors = () => router.push('/authors');  window.scrollTo(0, 0);
+
 
 </script>
 
@@ -18,9 +22,9 @@ const goToMagazinePost = () => router.push('/magazine-post');
         <h1 class="text-2xl"><strong>CATEGORIES</strong></h1>
         <div class="flex items-center gap-4">
             <button class="outline rounded-full py-2 px-5">ALL</button>
-            <button class="outline rounded-full py-2 px-5">ART</button>
-            <button class="outline rounded-full py-2 px-5">STREET ART</button>
-            <button class="outline rounded-full py-2 px-5">SCULPTURES</button>
+            <button @click="goToMagazinePost" class="outline rounded-full py-2 px-5">ART</button>
+            <button @click="goToMagazinePost" class="outline rounded-full py-2 px-5">STREET ART</button>
+            <button @click="goToMagazinePost" class="outline rounded-full py-2 px-5">SCULPTURES</button>
         </div>
     </div>
     <section>
@@ -215,7 +219,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
             </div>
         </div>
         <div class="flex justify-center">
-            <div @click="goToMagazinePost" class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                     <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -230,7 +234,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
                     </div>
                 </div>
             </div>
-            <div @click="goToMagazinePost" class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                      <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -245,7 +249,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
                     </div>
                 </div>
             </div>
-            <div @click="goToMagazinePost" class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                     <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -264,12 +268,12 @@ const goToMagazinePost = () => router.push('/magazine-post');
     </section>
 
     <div class="flex mt-32 mr-60 gap-2 mb-32 items-center justify-end">
-        <h1 class="text-xl"><strong>NEXT</strong></h1><img class="w-5" src="./img/Vector.png" alt="">  
+        <h1 @click="goToAuthors" class="text-xl hover:cursor-pointer"><strong>NEXT</strong></h1><img class="w-5" src="./img/Vector.png" alt="">  
     </div>
 
     <section class="mb-32">
         <div class="flex justify-center">
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                     <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-6 rounded-full"></button>
@@ -284,7 +288,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                      <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-6 rounded-full"></button>
@@ -299,7 +303,7 @@ const goToMagazinePost = () => router.push('/magazine-post');
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                     <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-6 rounded-full"></button>

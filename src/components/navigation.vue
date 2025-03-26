@@ -3,10 +3,12 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const goToMagazine = () => router.push('/magazine');
-const goToHome = () => router.push('/');
-const goToAuthors = () => router.push('/authors');
-const goToPodcast = () => router.push('/podcast');
+const goToMagazine = () => router.push('/magazine');   window.scrollTo(0, 0);
+const goToHome = () => router.push('/');   window.scrollTo(0, 0);
+const goToAuthors = () => router.push('/authors');   window.scrollTo(0, 0);
+const goToPodcast = () => router.push('/podcast');   window.scrollTo(0, 0);
+
+
 
 </script>
 

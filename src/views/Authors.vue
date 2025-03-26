@@ -5,7 +5,8 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const goToAuthorPost = () => router.push('/author-post');
+const goToAuthorPost = () => router.push('/author-post');   window.scrollTo(0, 0);
+
 
 
 </script>

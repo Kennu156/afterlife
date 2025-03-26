@@ -5,9 +5,9 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const goToBack = () => router.back();
+const goToBack = () => router.back();  window.scrollTo(0, 0);
+const goToPodcast = () => router.push('/podcast');  window.scrollTo(0, 0);
 
-const goToPodcast = () => router.push('/podcast');
 </script>
 
 <template>
@@ -21,7 +21,7 @@ const goToPodcast = () => router.push('/podcast');
     </div>
     <section class="flex">
         <div class="grid grid-cols-2">
-            <div class="flex flex-col gap-5 mx-auto">
+            <div class="flex flex-col gap-9 mx-24">
                 <img class="w-1/2 mx-auto" src="./img/podcast-cover.png" alt="">
                 <div class="flex justify-between my-10">
                         <h1><strong>Listen On</strong></h1>
