@@ -1,7 +1,11 @@
 <script setup>
 import Navigation from '../components/navigation.vue'
 import Footer from '../components/footer.vue'
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
+
+const goToMagazinePost = () => router.push('/magazine-post');
 
 </script>
 
@@ -21,7 +25,7 @@ import Footer from '../components/footer.vue'
     </div>
     <section>
         <div class="flex justify-center mt-24">
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                 <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -36,7 +40,7 @@ import Footer from '../components/footer.vue'
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                 <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -51,7 +55,7 @@ import Footer from '../components/footer.vue'
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                  <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -69,7 +73,7 @@ import Footer from '../components/footer.vue'
             </div>
         </div>
         <div class="flex justify-center">
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                 <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -84,7 +88,7 @@ import Footer from '../components/footer.vue'
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                 <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -99,7 +103,7 @@ import Footer from '../components/footer.vue'
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                 <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -117,7 +121,7 @@ import Footer from '../components/footer.vue'
             </div>
         </div>
         <div class="flex justify-center">
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                  <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -132,7 +136,7 @@ import Footer from '../components/footer.vue'
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                 <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -147,7 +151,7 @@ import Footer from '../components/footer.vue'
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                 <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -164,7 +168,7 @@ import Footer from '../components/footer.vue'
             </div>
         </div>
         <div class="flex justify-center">
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                     <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -179,7 +183,7 @@ import Footer from '../components/footer.vue'
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                     <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -194,7 +198,7 @@ import Footer from '../components/footer.vue'
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7 hover:cursor-pointer">
                     <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -211,7 +215,7 @@ import Footer from '../components/footer.vue'
             </div>
         </div>
         <div class="flex justify-center">
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7">
                     <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -226,7 +230,7 @@ import Footer from '../components/footer.vue'
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7">
                      <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
@@ -241,7 +245,7 @@ import Footer from '../components/footer.vue'
                     </div>
                 </div>
             </div>
-            <div class="outline p-7">
+            <div @click="goToMagazinePost" class="outline p-7">
                     <div class="flex justify-between mb-10">
                     <h1>16. March 2022</h1>
                     <button class="outline py-1 px-4 rounded-full">ART</button>
