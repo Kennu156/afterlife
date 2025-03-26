@@ -10,6 +10,8 @@ const goToAuthors = () => router.push('/authors');   window.scrollTo(0, 0);
 const goToPodcast = () => router.push('/podcast');   window.scrollTo(0, 0);
 const goToMagazinePost = () => router.push('/magazine-post');   window.scrollTo(0, 0);
 const goToPodcastPost = () => router.push('/podcast-post');   window.scrollTo(0, 0);
+const goToAuthorPost = () => router.push('/author-post');   window.scrollTo(0, 0);
+
 
 
 
@@ -268,7 +270,7 @@ const goToPodcastPost = () => router.push('/podcast-post');   window.scrollTo(0,
         </div>
         <div class="flex flex-col items-center">
             <div class="flex justify-center w-2/3">
-                <div class="outline p-7 flex gap-9 flex-1">
+                <div @click="goToAuthorPost" class="outline p-7 flex gap-9 flex-1 hover:cursor-pointer">
                     <img class="rounded-full" src="./img/jack-finnigan-rriAI0nhcbc-unsplash 1.png" alt="">
                     <div class="flex flex-col gap-10">
                         <h1 class="text-3xl mt-5"><strong>Jakob Grønberg</strong></h1>
@@ -278,7 +280,7 @@ const goToPodcastPost = () => router.push('/podcast-post');   window.scrollTo(0,
                         </div>
                     </div>
                 </div>
-                <div class="outline p-7 flex gap-9 flex-1">
+                <div @click="goToAuthorPost" class="outline p-7 flex gap-9 flex-1 hover:cursor-pointer">
                     <img class="rounded-full" src="./img/bekah-allmark-Qt0ogPnhGWY-unsplash 1.png" alt="">
                     <div class="flex flex-col gap-10">
                         <h1 class="text-3xl mt-5"><strong>Louise Jensen</strong></h1>
@@ -290,7 +292,7 @@ const goToPodcastPost = () => router.push('/podcast-post');   window.scrollTo(0,
                 </div>
             </div>
             <div class="flex justify-center w-2/3">
-                <div class="outline p-7 flex gap-9 flex-1">
+                <div @click="goToAuthorPost" class="outline p-7 flex gap-9 flex-1 hover:cursor-pointer">
                     <img class="rounded-full" src="./img/olena-sergienko-0TSd6uCKTKc-unsplash 1.png" alt="">
                     <div class="flex flex-col gap-10">
                         <h1 class="text-3xl mt-5"><strong>Anne Henry</strong></h1>
@@ -300,7 +302,7 @@ const goToPodcastPost = () => router.push('/podcast-post');   window.scrollTo(0,
                         </div>
                     </div>
                 </div>
-                <div class="outline p-7 flex gap-9 flex-1">
+                <div @click="goToAuthorPost" class="outline p-7 flex gap-9 flex-1 hover:cursor-pointer">
                     <img class="rounded-full" src="./img/metin-ozer-iSmTwuKTNDo-unsplash 1.png" alt="">
                     <div class="flex flex-col gap-10">
                         <h1 class="text-3xl mt-5"><strong>Anna Nielsen</strong></h1>
@@ -312,7 +314,7 @@ const goToPodcastPost = () => router.push('/podcast-post');   window.scrollTo(0,
                 </div>
             </div>
             <div class="flex justify-center w-2/3">
-                <div class="outline p-7 flex gap-9 flex-1">
+                <div @click="goToAuthorPost" class="outline p-7 flex gap-9 flex-1 hover:cursor-pointer">
                     <img class="rounded-full" src="./img/jeffery-erhunse-vp9mRauo68c-unsplash 1.png" alt="">
                     <div class="flex flex-col gap-10">
                         <h1 class="text-3xl mt-5"><strong>Jane Cooper</strong></h1>
@@ -322,7 +324,7 @@ const goToPodcastPost = () => router.push('/podcast-post');   window.scrollTo(0,
                         </div>
                     </div>
                 </div>
-                <div class="outline p-7 flex gap-9 flex-1">
+                <div @click="goToAuthorPost" class="outline p-7 flex gap-9 flex-1 hover:cursor-pointer">
                     <img class="rounded-full" src="./img/emiliano-vittoriosi-fIM5oAdHAxE-unsplash 1.png" alt="">
                     <div class="flex flex-col gap-10">
                         <h1 class="text-3xl mt-5"><strong>Cristofer Vaccaro</strong></h1>
