@@ -1,6 +1,12 @@
 <script setup>
 import Navigation from '../components/navigation.vue'
 import Footer from '../components/footer.vue'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const goToPodcastPost = () => router.push('/podcast-post');
+
 
 
 </script>
@@ -22,7 +28,7 @@ import Footer from '../components/footer.vue'
                 <p><strong>Date</strong> 16. March 2022</p>
                 <p><strong>Duration</strong> 1hr 20min</p>
                 <div class="flex gap-1 items-center">
-                  <p><strong>LISTEN</strong></p>
+                  <p @click="goToPodcastPost" class="hover:cursor-pointer"><strong>LISTEN</strong></p>
                   <img src="./img/Vector.png" alt="">  
                 </div>
             </div>
@@ -39,7 +45,7 @@ import Footer from '../components/footer.vue'
                 <p><strong>Date</strong> 16. March 2022</p>
                 <p><strong>Duration</strong> 1hr 20min</p>
                 <div class="flex gap-1 items-center">
-                  <p><strong>LISTEN</strong></p>
+                  <p @click="goToPodcastPost" class="hover:cursor-pointer"><strong>LISTEN</strong></p>
                   <img src="./img/Vector.png" alt="">  
                 </div>
             </div>
@@ -56,7 +62,7 @@ import Footer from '../components/footer.vue'
                 <p><strong>Date</strong> 16. March 2022</p>
                 <p><strong>Duration</strong> 1hr 20min</p>
                 <div class="flex gap-1 items-center">
-                  <p><strong>LISTEN</strong></p>
+                  <p @click="goToPodcastPost" class="hover:cursor-pointer"><strong>LISTEN</strong></p>
                   <img src="./img/Vector.png" alt="">  
                 </div>
             </div>
@@ -73,7 +79,7 @@ import Footer from '../components/footer.vue'
                 <p><strong>Job</strong> 16. March 2022</p>
                 <p><strong>Duration</strong> 1hr 20min</p>
                 <div class="flex gap-1 items-center">
-                  <p><strong>LISTEN</strong></p>
+                  <p @click="goToPodcastPost" class="hover:cursor-pointer"><strong>LISTEN</strong></p>
                   <img src="./img/Vector.png" alt="">  
                 </div>
             </div>
@@ -90,7 +96,7 @@ import Footer from '../components/footer.vue'
                 <p><strong>Date</strong> 16. March 2022</p>
                 <p><strong>Duration</strong> 1hr 20min</p>
                 <div class="flex gap-1 items-center">
-                  <p><strong>LISTEN</strong></p>
+                  <p @click="goToPodcastPost" class="hover:cursor-pointer"><strong>LISTEN</strong></p>
                   <img src="./img/Vector.png" alt="">  
                 </div>
             </div>

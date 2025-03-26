@@ -1,6 +1,11 @@
 <script setup>
 import Navigation from '../components/navigation.vue'
 import Footer from '../components/footer.vue'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const goToAuthorPost = () => router.push('/author-post');
 
 
 </script>
@@ -21,7 +26,7 @@ import Footer from '../components/footer.vue'
                 <p><strong>Job</strong> Artist</p>
                 <p><strong>City</strong> Berlin</p>
                 <div class="flex gap-1 items-center">
-                  <p><strong>ABOUT</strong></p>
+                  <p @click="goToAuthorPost" class="hover:cursor-pointer"><strong>ABOUT</strong></p>
                   <img src="./img/Vector.png" alt="">  
                 </div>
             </div>
@@ -37,7 +42,7 @@ import Footer from '../components/footer.vue'
                 <p><strong>Job</strong> Artist</p>
                 <p><strong>City</strong> Berlin</p>
                 <div class="flex gap-1 items-center">
-                  <p><strong>ABOUT</strong></p>
+                  <p @click="goToAuthorPost" class="hover:cursor-pointer"><strong>ABOUT</strong></p>
                   <img src="./img/Vector.png" alt="">  
                 </div>
             </div>
@@ -53,7 +58,7 @@ import Footer from '../components/footer.vue'
                 <p><strong>Job</strong> Artist</p>
                 <p><strong>City</strong> Berlin</p>
                 <div class="flex gap-1 items-center">
-                  <p><strong>ABOUT</strong></p>
+                  <p @click="goToAuthorPost" class="hover:cursor-pointer"><strong>ABOUT</strong></p>
                   <img src="./img/Vector.png" alt="">  
                 </div>
             </div>
@@ -69,7 +74,7 @@ import Footer from '../components/footer.vue'
                 <p><strong>Job</strong> Artist</p>
                 <p><strong>City</strong> Berlin</p>
                 <div class="flex gap-1 items-center">
-                  <p><strong>ABOUT</strong></p>
+                  <p @click="goToAuthorPost" class="hover:cursor-pointer"><strong>ABOUT</strong></p>
                   <img src="./img/Vector.png" alt="">  
                 </div>
             </div>
@@ -85,7 +90,7 @@ import Footer from '../components/footer.vue'
                 <p><strong>Job</strong> Artist</p>
                 <p><strong>City</strong> Berlin</p>
                 <div class="flex gap-1 items-center">
-                  <p><strong>ABOUT</strong></p>
+                  <p @click="goToAuthorPost" class="hover:cursor-pointer"><strong>ABOUT</strong></p>
                   <img src="./img/Vector.png" alt="">  
                 </div>
             </div>
@@ -101,7 +106,7 @@ import Footer from '../components/footer.vue'
                 <p><strong>Job</strong> Artist</p>
                 <p><strong>City</strong> Berlin</p>
                 <div class="flex gap-1 items-center">
-                  <p><strong>ABOUT</strong></p>
+                  <p @click="goToAuthorPost" class="hover:cursor-pointer"><strong>ABOUT</strong></p>
                   <img src="./img/Vector.png" alt="">  
                 </div>
             </div>

@@ -1,6 +1,11 @@
 <script setup>
 import Navigation from '../components/navigation.vue'
 import Footer from '../components/footer.vue'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const goToBack = () => router.back();
 
 
 </script>
@@ -10,7 +15,7 @@ import Footer from '../components/footer.vue'
     <div class="flex justify-around items-center mb-32">
         <div class="flex items-center gap-2">
             <img src="./img/Vector (1).png" alt="">
-            <h1>GO BACK</h1>   
+            <h1 @click="goToBack" class="hover:cursor-pointer">GO BACK</h1>   
         </div>
         <h1 class="text-2xl"><strong>AUTHOR</strong></h1>
     </div>

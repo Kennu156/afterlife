@@ -1,4 +1,12 @@
 <script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const goToMagazine = () => router.push('/magazine');
+const goToHome = () => router.push('/');
+const goToAuthors = () => router.push('/authors');
+const goToPodcast = () => router.push('/podcast');
 
 
 </script>
@@ -22,16 +30,16 @@
             </div>
         </div>
         <div class="pt-44 flex justify-around pb-24">
-            <h1 class="text-3xl"><strong>FYRRE MAGAZINE</strong></h1>
+            <h1 @click="goToHome" class="text-3xl hover:cursor-pointer"><strong>FYRRE MAGAZINE</strong></h1>
             <div class="flex flex-col gap-4">
                 <p>Art</p>
                 <p>Design</p>
                 <p>Architecture</p>
             </div>
             <div class="flex flex-col gap-4">
-                <p>Magazine</p>
-                <p>Podcast</p>
-                <p>Authors</p>
+                <p @click="goToMagazine" class="hover:cursor-pointer">Magazine</p>
+                <p @click="goToPodcast" class="hover:cursor-pointer">Podcast</p>
+                <p @click="goToAuthors" class="hover:cursor-pointer">Authors</p>
             </div>
             <div class="flex flex-col gap-4">
                 <p>Styleguide</p>

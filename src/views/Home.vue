@@ -1,13 +1,21 @@
 <script setup>
 import Footer from '../components/footer.vue';
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
+
+const goToMagazine = () => router.push('/magazine');
+const goToHome = () => router.push('/');
+const goToAuthors = () => router.push('/authors');
+const goToPodcast = () => router.push('/podcast');
+const goToMagazinePost = () => router.push('/magazine-post');
 
 
 </script>
 
 <template>
-    <div class="m-6 flex flex-col gap-9">
-        <h1 class="text-2xl">FYRRE MAGAZINE</h1>
+    <div class="m-6 flex flex-col gap-4">
+        <h1 @click="goToHome" class="text-2xl hover:cursor-pointer">FYRRE MAGAZINE</h1>
         <img src="./img/line.png" alt="">
          <strong><h1 class="text-9xl size text-center mx-60">ART & LIFE</h1></strong>  
     </div>
@@ -47,7 +55,7 @@ import Footer from '../components/footer.vue';
                                     <p><strong>DATE</strong> 16. March 2022</p>  
                                     <p><strong>Duration</strong> 1 Min</p> 
                                 </div>
-                            <button class="outline rounded-3xl py-2 px-3">ART</button>
+                            <button @click="goToMagazinePost" class="outline rounded-3xl py-2 px-3 hover:cursor-pointer">ART</button>
                         </div>        
                     </div>
                 </div>
@@ -67,7 +75,7 @@ import Footer from '../components/footer.vue';
                                     <p><strong>DATE</strong> 16. March 2022</p>  
                                     <p><strong>Duration</strong> 1 Min</p> 
                                 </div>
-                            <button class="outline rounded-3xl py-2 px-3">SCULPTURES</button>
+                            <button @click="goToMagazinePost" class="outline rounded-3xl py-2 px-3 hover:cursor-pointer">SCULPTURES</button>
                         </div>        
                     </div>
                 </div>
@@ -87,7 +95,7 @@ import Footer from '../components/footer.vue';
                                     <p><strong>DATE</strong> 16. March 2022</p>  
                                     <p><strong>Duration</strong> 1 Min</p> 
                                 </div>
-                            <button class="outline rounded-3xl py-2 px-3">ART</button>
+                            <button @click="goToMagazinePost" class="outline rounded-3xl py-2 px-3 hover:cursor-pointer">ART</button>
                         </div>        
                     </div>
                 </div>
@@ -107,7 +115,7 @@ import Footer from '../components/footer.vue';
                                     <p><strong>DATE</strong> 16. March 2022</p>  
                                     <p><strong>Duration</strong> 1 Min</p> 
                                 </div>
-                            <button class="outline rounded-3xl py-2 px-3">ART</button>
+                            <button @click="goToMagazinePost" class="outline rounded-3xl py-2 px-3 hover:cursor-pointer">ART</button>
                         </div>        
                     </div>
                 </div>
@@ -127,7 +135,7 @@ import Footer from '../components/footer.vue';
                                     <p><strong>DATE</strong> 16. March 2022</p>  
                                     <p><strong>Duration</strong> 1 Min</p> 
                                 </div>
-                            <button class="outline rounded-3xl py-2 px-3">STREET ART</button>
+                            <button @click="goToMagazinePost" class="outline rounded-3xl py-2 px-3 hover:cursor-pointer">STREET ART</button>
                         </div>        
                     </div>
                 </div>
@@ -147,7 +155,7 @@ import Footer from '../components/footer.vue';
                                     <p><strong>DATE</strong> 16. March 2022</p>  
                                     <p><strong>Duration</strong> 1 Min</p> 
                                 </div>
-                            <button class="outline rounded-3xl py-2 px-3">STREET ART</button>
+                            <button @click="goToMagazinePost" class="outline rounded-3xl py-2 px-3 hover:cursor-pointer">STREET ART</button>
                         </div>        
                     </div>
                 </div>
@@ -198,7 +206,7 @@ import Footer from '../components/footer.vue';
 
     </section>
     <div class="flex mt-32 ml-60 gap-2 mb-32 items-center">
-        <h1 class="text-xl"><strong>ALL ARTICLES</strong></h1><img class="w-5" src="./img/Vector.png" alt="">  
+        <h1 @click="goToMagazine" class="text-xl hover:cursor-pointer"><strong>ALL ARTICLES</strong></h1><img class="w-5" src="./img/Vector.png" alt="">  
     </div>
 
     <section>
@@ -207,7 +215,7 @@ import Footer from '../components/footer.vue';
         <div class="flex justify-between items-center mx-60">
                 <h1 class="text-9xl"><strong>PODCAST</strong></h1>
             <div class="flex items-center">
-                <h1 class="text-xl"><strong>ALL EPISODES</strong></h1>
+                <h1 @click="goToPodcast" class="text-xl hover:cursor-pointer"><strong>ALL EPISODES</strong></h1>
                 <img class="w-5 ml-2" src="./img/Vector.png" alt="">   
             </div>
         </div>
@@ -252,7 +260,7 @@ import Footer from '../components/footer.vue';
         <div class="flex justify-between items-center mx-60 mb-36">
                 <h1 class="text-9xl"><strong>AUTHORS</strong></h1>
             <div class="flex items-center">
-                <h1 class="text-xl"><strong>ALL AUTHORS</strong></h1>
+                <h1 @click="goToAuthors" class="text-xl hover:cursor-pointer"><strong>ALL AUTHORS</strong></h1>
                 <img class="w-5 ml-2" src="./img/Vector.png" alt="">   
             </div>
         </div>
